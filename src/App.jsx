@@ -58,7 +58,7 @@ const toggleReminder = (id) => {
       />
       {/* Quick ternary: if showTaskForm is true then... */}
       {showTaskForm && <AddTask onAdd={addTask}/>}
-    {tasks.length > 0 ? <Tasks tasks={tasks}
+      {tasks.length > 0 ? <Tasks tasks={tasks}
       onDelete={deleteTask} onToggle={toggleReminder}
       /> : 'There are currently no tasks'}
     </div>
